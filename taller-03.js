@@ -39,8 +39,6 @@ function conversionRomana(romano) {
 console.log(conversionRomana("III"))
 console.log(conversionRomana("XIV"))
 console.log(conversionRomana("MMXXIV"))
-console.log(conversionRomana("MCMXCVII"))
-console.log(conversionRomana("XLII"))
 
 
 function descomposicion(str) {
@@ -55,6 +53,4 @@ function descomposicion(str) {
 }
 
 console.log(descomposicion("malhumor,al,hum,humor,m,mal,malhu"))
-console.log(descomposicion("football,foot,ball,foo,tball"))
-console.log(descomposicion("teclado,tec,te,clado,do"))
-console.log(descomposicion("perro,pe,rr,ro,per,rro"))
+
