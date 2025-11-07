@@ -1,50 +1,46 @@
 /* Punto1: Desarrolle una funcion llamada findMax que reciba una lista de números por parámetro y retorne el mayor valor*/
 
-function findMax(numbers) {
-   mayor = numbers[0]
+function findMax({numbers}) {
+   let mayor = numbers[0]
    for (let i = 1; i < numbers.length; i++) {
       if (numbers[i] > mayor) {
          mayor = numbers[i]
       }
    }
-    return mayor
+    return {mayor}
 }
 
-lista = [3, 5, 7, 2, 8, -1]
-console.log(findMax(lista))
 
 /*Punto2: Desarrolle una funcion llamada includes que reciba una lista de números y unnumero por parámetro y 
 retorne un booleano representando si el numero se encuentra en la lista.*/
 
-function includes(numbers, num) {
+function includes({numbers, num}) {
+    let t = true
+    let f = false
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] === num) {
-            return true
+            return {t}
         }
     }
-    return false
+    return {f}
     }
 
-lista2 = [3, 5, 7, 2, 8, -1]
-console.log(includes(lista2, 5))
 
 /*Punto3: Desarrolle una funcion llamada sum que reciba una lista de números y retorne la suma de los elementos de la lista.*/
 
-function sum(numbers) {
+function sum({numbers}) {
     let total = 0
     for (let i = 0; i < numbers.length; i++) {
         total += numbers[i]
     }
-    return total
+    return {total}
 }
 
-lista3 = [3, 5, 7, 2, 8, -1]
-console.log(sum(lista3))
 
 /*Punto4: Desarrolle una funcion llamada missingNumbers que reciba una lista de números y retorne una lista de los números
 faltantes entre el menor y mayor de la lista.*/
 
-function missingNumbers(nums) {
+function missingNumbers({nums}) {
     if (nums.length === 0) return [];
   
     let min = nums[0];
@@ -74,8 +70,13 @@ function missingNumbers(nums) {
       }
     }
   
-    return missing;
+    return {missing};
   }
-  
-  console.log(missingNumbers([3, 7, 1, 5]));
-  
+
+
+module.exports = {
+  findMax,
+  includes,
+  sum,
+  missingNumbers
+};
