@@ -16,7 +16,7 @@ Rutas registradas:
 1. Asegúrate de que el servidor esté ejecutándose:
    ```bash
    npm run dev
-   Por defecto estará disponible en: http://localhost:3000
+  Por defecto estará disponible en: http://localhost:3000
    
 2. Abre Postman y crea una nueva solicitud:
 - Método: POST
