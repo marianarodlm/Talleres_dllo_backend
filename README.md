@@ -11,7 +11,7 @@ Rutas registradas:
 - /api/taller02/ : find-max, includes, sum, missing-numbers
 - /api/taller03/ : desglosar-string, two-sum, conversion-romana, descomposicion
   
-## 🧪 Cómo probar la API con Postman
+## Cómo probar la API con Postman
 
 1. Asegúrate de que el servidor esté ejecutándose:
    ```bash
